@@ -142,9 +142,6 @@ variable "kubernetes_nodepool_system_name" {
 variable "kubernetes_azure_rbac_enabled" {
   type = bool
 }
-variable "kubernetes_admin_group_object_ids" {
-  type = list(string)
-}
 variable "temporary_name_for_rotation_db_pool" {
   type = string
 }
@@ -162,7 +159,4 @@ variable "temporary_name_for_rotation_basic_pool" {
 }
 variable "temporary_name_for_rotation_monitoring_pool" {
   type = string
-}
-variable "kubernetes_cluster_admin_group_object_ids" {
-  type = list(string)
 }

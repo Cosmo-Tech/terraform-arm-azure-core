@@ -8,10 +8,9 @@ if [[ $# -lt 1 ]]; then
 fi
 
 STATE_KEY="$1"
-
-RESOURCE_GROUP="cosmotech-entries"
-STORAGE_ACCOUNT="platformkvasir"
-CONTAINER_NAME="states-entries"
+RESOURCE_GROUP="cosmotechstates"
+STORAGE_ACCOUNT="cosmotechstates"
+CONTAINER_NAME="cosmotechstates"
 
 PLATFORM_ENTRIES_ACCESS_KEY=$(
   az storage account keys list \

@@ -13,7 +13,7 @@ tf_access_key           = ""
 
 # Kubernetes
 kubernetes_version                          = "1.34.2"
-kubernetes_azure_rbac_enabled               = true
+kubernetes_azure_rbac_enabled               = false
 temporary_name_for_rotation_system_pool     = "system"
 kubernetes_network_plugin                   = "azure"
 kubernetes_nodepool_system_type             = "Standard_A2_v2"
@@ -58,8 +58,6 @@ kubernetes_highmemory_enable_auto_scaling   = true
 kubernetes_services_enable_auto_scaling     = true
 kubernetes_db_enable_auto_scaling           = true
 kubernetes_monitoring_enable_auto_scaling   = true
-kubernetes_admin_group_object_ids = []
-kubernetes_cluster_admin_group_object_ids = []
 kubernetes_cluster_name                     = ""
 kubernetes_nodepool_system_name             = "system"
 temporary_name_for_rotation_basic_pool      = "basic"

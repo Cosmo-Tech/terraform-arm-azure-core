@@ -6,7 +6,6 @@ module "create-cluster" {
   network_clientsecret                        = local.network_sp_client_secret
   network_client_object_id                    = local.network_sp_object_id
   subnet_id                                   = local.platform_subnet_id
-  kubernetes_admin_group_object_ids           = var.kubernetes_admin_group_object_ids
   location                                    = var.location
   resource_group                              = var.resource_group
   cluster_name                                = var.cluster_name
@@ -67,7 +66,6 @@ module "create-cluster" {
   temporary_name_for_rotation_highmemoty_pool = var.temporary_name_for_rotation_highmemoty_pool
   temporary_name_for_rotation_monitoring_pool = var.temporary_name_for_rotation_monitoring_pool
   temporary_name_for_rotation_services_pool   = var.temporary_name_for_rotation_services_pool
-  kubernetes_cluster_admin_group_object_ids   = var.kubernetes_cluster_admin_group_object_ids
 
   depends_on = [
     module.create-platform-prerequisite,

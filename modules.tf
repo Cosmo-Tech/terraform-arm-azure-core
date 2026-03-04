@@ -82,15 +82,12 @@ module "cosmotech-prerequisites" {
   kubernetes_system_os_disk_size              = var.kubernetes_system_os_disk_size
   kubernetes_nodepool_system_name             = var.kubernetes_nodepool_system_name
   kubernetes_azure_rbac_enabled               = var.kubernetes_azure_rbac_enabled
-  kubernetes_admin_group_object_ids           = var.kubernetes_admin_group_object_ids
   temporary_name_for_rotation_basic_pool      = var.temporary_name_for_rotation_basic_pool
   temporary_name_for_rotation_db_pool         = var.temporary_name_for_rotation_db_pool
   temporary_name_for_rotation_highcpu_pool    = var.temporary_name_for_rotation_highcpu_pool
   temporary_name_for_rotation_highmemoty_pool = var.temporary_name_for_rotation_highmemoty_pool
   temporary_name_for_rotation_monitoring_pool = var.temporary_name_for_rotation_monitoring_pool
   temporary_name_for_rotation_services_pool   = var.temporary_name_for_rotation_services_pool
-  kubernetes_cluster_admin_group_object_ids   = var.kubernetes_cluster_admin_group_object_ids
-  resource_group_name   = var.resource_group
 
   # Storage Backup velero
   velero_deploy                        = var.velero_deploy

@@ -178,12 +178,6 @@ variable "kubernetes_azure_rbac_enabled" {
 variable "tenant_id" {
   type = string
 }
-variable "kubernetes_admin_group_object_ids" {
-  type = list(string)
-}
-variable "kubernetes_cluster_admin_group_object_ids" {
-  type = list(string)
-}
 variable "temporary_name_for_rotation_db_pool" {
   type = string
 }
